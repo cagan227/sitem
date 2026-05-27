@@ -1,1 +1,102 @@
 
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hakkımızda | Öztürk Mekanik</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="top-bar">
+        <div class="top-bar-inner">
+            <span>📞 0532 123 45 67</span>
+            <span>✉️ info@ozturkmekanik.com</span>
+        </div>
+    </div>
+    <header>
+        <div class="header-inner">
+            <div class="logo">
+                <span class="logo-icon">⚙️</span>
+                <div class="logo-text">
+                    <span class="logo-title">ÖZTÜRK</span>
+                    <span class="logo-subtitle">MEKANİK</span>
+                </div>
+            </div>
+            <nav>
+                <a href="index.html">Ana Sayfa</a>
+                <a href="hakkimizda.html" class="active">Hakkımızda</a>
+                <a href="iletisim.html">İletişim</a>
+            </nav>
+            <div class="mobile-menu-btn">☰</div>
+        </div>
+    </header>
+
+    <section class="page-banner">
+        <h1>Hakkımızda</h1>
+        <p>Öztürk Mekanik'i yakından tanıyın</p>
+    </section>
+
+    <section class="page-content">
+        <div class="about-grid">
+            <div class="about-text" id="hakkimizdaMetin">
+                <h2>Biz Kimiz?</h2>
+                <p>Öztürk Mekanik, 2010 yılından beri endüstriyel havalandırma, baca sistemleri ve iklimlendirme alanında hizmet vermektedir. Uzman mühendis kadromuz ve deneyimli montaj ekibimizle projelerinizi anahtar teslim olarak gerçekleştiriyoruz.</p>
+                <p>Çalışma prensibimiz kalite, güvenlik ve müşteri memnuniyeti üzerine kuruludur. Her projede uluslararası standartları referans alır, en güncel teknolojileri kullanırız.</p>
+                <div class="about-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">500+</span>
+                        <span class="stat-label">Tamamlanan Proje</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">20+</span>
+                        <span class="stat-label">Yıllık Tecrübe</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">50+</span>
+                        <span class="stat-label">Uzman Ekip</span>
+                    </div>
+                </div>
+            </div>
+            <div class="about-image">
+                <div class="image-placeholder">🏭</div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-inner">
+            <div class="footer-col">
+                <h3>Öztürk Mekanik</h3>
+                <p>Endüstriyel havalandırma, baca sistemleri ve iklimlendirme çözümlerinde güvenilir iş ortağınız.</p>
+            </div>
+            <div class="footer-col">
+                <h3>Hızlı Linkler</h3>
+                <a href="index.html">Ana Sayfa</a>
+                <a href="hakkimizda.html">Hakkımızda</a>
+                <a href="iletisim.html">İletişim</a>
+            </div>
+            <div class="footer-col">
+                <h3>İletişim</h3>
+                <p>📞 0532 123 45 67</p>
+                <p>✉️ info@ozturkmekanik.com</p>
+                <p>📍 İkitelli OSB, Başakşehir/İstanbul</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2024 Öztürk Mekanik. Tüm hakları saklıdır.</p>
+        </div>
+    </footer>
+
+    <script>
+        fetch('/data/site.json')
+          .then(res => res.json())
+          .then(data => {
+              if(data.hakkimizda) {
+                  document.getElementById('hakkimizdaMetin').innerHTML = data.hakkimizda;
+              }
+          });
+    </script>
+</body>
+</html>
