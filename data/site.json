@@ -1,0 +1,60 @@
+{
+  "hakkimizda": "<h2>Biz Kimiz?</h2><p>Öztürk Mekanik, 2010 yılından beri endüstriyel havalandırma, baca sistemleri ve iklimlendirme alanında hizmet vermektedir. Uzman mühendis kadromuz ve deneyimli montaj ekibimizle projelerinizi anahtar teslim olarak gerçekleştiriyoruz.</p><p>Çalışma prensibimiz kalite, güvenlik ve müşteri memnuniyeti üzerine kuruludur. Her projede uluslararası standartları referans alır, en güncel teknolojileri kullanırız.</p><div class=\"about-stats\"><div class=\"stat-item\"><span class=\"stat-number\">500+</span><span class=\"stat-label\">Tamamlanan Proje</span></div><div class=\"stat-item\"><span class=\"stat-number\">20+</span><span class=\"stat-label\">Yıllık Tecrübe</span></div><div class=\"stat-item\"><span class=\"stat-number\">50+</span><span class=\"stat-label\">Uzman Ekip</span></div></div>",
+  "iletisim": {
+    "adres": "İkitelli OSB Mah. Demirciler Cad. No:15 Başakşehir/İstanbul",
+    "telefon": "0532 123 45 67",
+    "eposta": "info@ozturkmekanik.com"
+  },
+  "hizmetler": [
+    {
+      "ad": "Davlumbaz Sistemleri",
+      "aciklama": "Profesyonel mutfaklar için yüksek emiş gücüne sahip paslanmaz çelik davlumbaz sistemleri. Kolay temizlenebilir filtreler ve sessiz çalışma özelliği ile restoran, otel ve toplu yemekhaneler için ideal çözüm.",
+      "fotolar": []
+    },
+    {
+      "ad": "Endüstriyel Mutfak Havalandırma",
+      "aciklama": "Restoran, otel ve toplu yemekhaneler için özel tasarlanmış havalandırma çözümleri. Hijyen standartlarına tam uyumlu, enerji verimli sistemler ile mutfaklarınızda ideal hava kalitesi sağlıyoruz.",
+      "fotolar": []
+    },
+    {
+      "ad": "Isıtma Sistemleri",
+      "aciklama": "Fabrika, depo ve büyük hacimli mekanlar için sıcak hava üreteçleri, radyant ısıtıcılar ve merkezi ısıtma sistemleri. Enerji tasarruflu çözümlerle kış aylarında konforlu çalışma ortamı.",
+      "fotolar": []
+    },
+    {
+      "ad": "Soğutma Sistemleri",
+      "aciklama": "Endüstriyel soğutma grupları, soğuk hava depoları ve proses soğutma çözümleri. Gıda, ilaç ve üretim sektörleri için yüksek verimli soğutma sistemleri kurulum ve bakım hizmeti.",
+      "fotolar": []
+    },
+    {
+      "ad": "Sulu Baca Sistemleri",
+      "aciklama": "Enerji geri kazanımlı, su sirkülasyonlu baca sistemleri. Duman tahliyesinde maksimum verim ve çevre dostu teknoloji ile işletmenizin karbon ayak izini azaltın.",
+      "fotolar": []
+    },
+    {
+      "ad": "Baca Sistemleri",
+      "aciklama": "Çelik, paslanmaz ve modüler baca sistemleri. Doğalgaz, kömür, fuel-oil gibi her türlü yakıt tipine uygun duman gazı tahliye çözümleri. Projelendirme, imalat ve montaj hizmeti.",
+      "fotolar": []
+    },
+    {
+      "ad": "Havalandırma Sistemleri",
+      "aciklama": "Taze hava, egzoz ve ısı geri kazanımlı havalandırma santralleri. Fabrika, atölye ve iş merkezleri için ortam konforunu artıran profesyonel havalandırma çözümleri.",
+      "fotolar": []
+    },
+    {
+      "ad": "Bacasız Davlumbaz Sistemleri",
+      "aciklama": "Gelişmiş filtre teknolojisi ile bacaya ihtiyaç duymadan çalışan davlumbaz sistemleri. Esnek kurulum avantajı, düşük işletme maliyeti ve çevre dostu yapısıyla öne çıkar.",
+      "fotolar": []
+    },
+    {
+      "ad": "Fan Sistemleri",
+      "aciklama": "Aksiyal, radyal ve çatı tipi endüstriyel fanlar. Sessiz çalışma, yüksek debi kapasitesi ve uzun ömürlü yapısıyla her türlü endüstriyel havalandırma ihtiyacına uygun çözümler.",
+      "fotolar": []
+    },
+    {
+      "ad": "Klima Santrali Sistemleri",
+      "aciklama": "Karışım havalı, tam taze havalı ve hijyenik tip klima santralleri. Fabrika, hastane, AVM ve iş merkezleri için özel tasarlanmış merkezi iklimlendirme sistemleri.",
+      "fotolar": []
+    }
+  ]
+}
