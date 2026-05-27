@@ -1,1 +1,118 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Öztürk Mekanik | Endüstriyel Havalandırma</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-XXXXXXXXXX');
+    </script>
+</head>
+<body>
+    <!-- Üst Çubuk -->
+    <div class="top-bar">
+        <div class="top-bar-inner">
+            <span>📞 0532 123 45 67</span>
+            <span>✉️ info@ozturkmekanik.com</span>
+        </div>
+    </div>
 
+    <!-- Header -->
+    <header>
+        <div class="header-inner">
+            <div class="logo">
+                <span class="logo-icon">⚙️</span>
+                <div class="logo-text">
+                    <span class="logo-title">ÖZTÜRK</span>
+                    <span class="logo-subtitle">MEKANİK</span>
+                </div>
+            </div>
+            <nav>
+                <a href="index.html" class="active">Ana Sayfa</a>
+                <a href="hakkimizda.html">Hakkımızda</a>
+                <a href="iletisim.html">İletişim</a>
+            </nav>
+            <div class="mobile-menu-btn">☰</div>
+        </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <span class="hero-badge">20+ Yıllık Tecrübe</span>
+            <h1>Endüstriyel Havalandırma<br>& Baca Sistemleri</h1>
+            <p class="hero-desc">Profesyonel mühendislik çözümleriyle işletmenizin hava kalitesini garanti altına alıyoruz.</p>
+            <div class="hero-buttons">
+                <a href="hakkimizda.html" class="btn btn-primary">Hakkımızda</a>
+                <a href="iletisim.html" class="btn btn-outline">İletişime Geç</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hizmetler -->
+    <section class="hizmetler-section">
+        <div class="section-header">
+            <span class="section-badge">HİZMETLERİMİZ</span>
+            <h2>Size Nasıl Yardımcı Olabiliriz?</h2>
+            <p class="section-desc">Endüstriyel tesisiniz için ihtiyaç duyduğunuz tüm iklimlendirme çözümleri</p>
+        </div>
+        <div class="arama-kutusu">
+            <input type="text" id="arama" placeholder="🔍 Hizmet ara... (örn: davlumbaz)">
+        </div>
+        <div class="hizmetler-grid" id="hizmetListesi"></div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-inner">
+            <div class="footer-col">
+                <h3>Öztürk Mekanik</h3>
+                <p>Endüstriyel havalandırma, baca sistemleri ve iklimlendirme çözümlerinde güvenilir iş ortağınız.</p>
+            </div>
+            <div class="footer-col">
+                <h3>Hızlı Linkler</h3>
+                <a href="index.html">Ana Sayfa</a>
+                <a href="hakkimizda.html">Hakkımızda</a>
+                <a href="iletisim.html">İletişim</a>
+            </div>
+            <div class="footer-col">
+                <h3>İletişim</h3>
+                <p>📞 0532 123 45 67</p>
+                <p>✉️ info@ozturkmekanik.com</p>
+                <p>📍 İkitelli OSB, Başakşehir/İstanbul</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2024 Öztürk Mekanik. Tüm hakları saklıdır.</p>
+        </div>
+    </footer>
+
+    <!-- Modal -->
+    <div id="hizmetModal" class="modal">
+        <div class="modal-content">
+            <span class="kapat">&times;</span>
+            <h2 id="modalBaslik"></h2>
+            <p id="modalAciklama"></p>
+            <div id="modalGaleri"></div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+    <script>
+        fetch('/data/site.json')
+          .then(res => res.json())
+          .then(data => {
+              siteBilgileri = data;
+              hizmetleriYukle();
+          });
+    </script>
+</body>
+</html>
