@@ -1,0 +1,34 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "img/uploads"
+public_folder: "/img/uploads"
+
+collections:
+  - name: "ayarlar"
+    label: "Site Ayarları"
+    files:
+      - name: "genel"
+        label: "Genel Ayarlar"
+        file: "data/site.json"
+        fields:
+          - {label: "Hakkımızda (HTML)", name: "hakkimizda", widget: "text", required: false}
+          - label: "İletişim Bilgileri"
+            name: "iletisim"
+            widget: "object"
+            fields:
+              - {label: "Adres", name: "adres", widget: "string"}
+              - {label: "Telefon", name: "telefon", widget: "string"}
+              - {label: "E-posta", name: "eposta", widget: "string"}
+          - label: "Hizmetler"
+            name: "hizmetler"
+            widget: "list"
+            fields:
+              - {label: "Hizmet Adı", name: "ad", widget: "string"}
+              - {label: "Açıklama", name: "aciklama", widget: "text"}
+              - label: "Fotoğraflar"
+                name: "fotolar"
+                widget: "list"
+                required: false
+                field: {label: "Fotoğraf", name: "foto", widget: "image"}
