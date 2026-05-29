@@ -1,0 +1,96 @@
+                <a href="index.html">Ana Sayfa</a>
+                <a href="hakkimizda.html">Hakkımızda</a>
+                <a href="iletisim.html" class="active">İletişim</a>
+            </nav>
+            <div class="mobile-menu-btn">☰</div>
+        </div>
+    </header>
+
+    <section class="page-banner">
+        <h1>İletişim</h1>
+        <p>Bize ulaşın, projenizi konuşalım</p>
+    </section>
+
+    <section class="page-content">
+        <div class="contact-grid">
+            <div class="contact-info">
+                <h2>Bize Ulaşın</h2>
+                <div class="info-card">
+                    <span class="info-icon">📍</span>
+                    <div>
+                        <strong>Adres</strong>
+                        <p id="infoAdres">İkitelli OSB Mah. Demirciler Cad. No:15 Başakşehir/İstanbul</p>
+                    </div>
+                </div>
+                <div class="info-card">
+                    <span class="info-icon">📞</span>
+                    <div>
+                        <strong>Telefon</strong>
+                        <p id="infoTelefon">0532 123 45 67</p>
+                    </div>
+                </div>
+                <div class="info-card">
+                    <span class="info-icon">✉️</span>
+                    <div>
+                        <strong>E-posta</strong>
+                        <p id="infoEposta">info@ozturkmekanik.com</p>
+                    </div>
+                </div>
+                <a id="wpLink" class="whatsapp-btn" href="#" target="_blank">
+                    📱 WhatsApp'tan Hızlı İletişim
+                </a>
+            </div>
+            <div class="contact-map">
+                <div class="map-placeholder">
+                    <span>📍</span>
+                    <p>İkitelli OSB, Başakşehir/İstanbul</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-inner">
+            <div class="footer-col">
+                <h3>Öztürk Mekanik</h3>
+                <p>Endüstriyel havalandırma, baca sistemleri ve iklimlendirme çözümlerinde güvenilir iş ortağınız.</p>
+            </div>
+            <div class="footer-col">
+                <h3>Hızlı Linkler</h3>
+                <a href="index.html">Ana Sayfa</a>
+                <a href="hakkimizda.html">Hakkımızda</a>
+                <a href="iletisim.html">İletişim</a>
+            </div>
+            <div class="footer-col">
+                <h3>İletişim</h3>
+                <p>📞 0532 123 45 67</p>
+                <p>✉️ info@ozturkmekanik.com</p>
+                <p>📍 İkitelli OSB, Başakşehir/İstanbul</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2024 Öztürk Mekanik. Tüm hakları saklıdır.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Sayfa yüklenirken hemen bir varsayılan numara ile butonu aktif et
+        var wpLink = document.getElementById('wpLink');
+        var defaultPhone = '905321234567'; // buraya kendi gerçek numaranı yaz (başında 90, boşluksuz)
+        wpLink.href = 'https://wa.me/' + defaultPhone + '?text=Merhaba%20bilgi%20almak%20istiyorum';
+
+        // CMS'den güncel veriyi al, varsa butonu güncelle
+        fetch('/data/site.json')
+          .then(res => res.json())
+          .then(data => {
+              if(data.iletisim) {
+                  document.getElementById('infoAdres').textContent = data.iletisim.adres;
+                  document.getElementById('infoTelefon').textContent = data.iletisim.telefon;
+                  document.getElementById('infoEposta').textContent = data.iletisim.eposta;
+                  const numara = data.iletisim.telefon.replace(/[^0-9]/g, '');
+                  wpLink.href = 'https://wa.me/90' + numara + '?text=Merhaba%20bilgi%20almak%20istiyorum';
+              }
+          });
+    </script>
+</body>
+</html>
