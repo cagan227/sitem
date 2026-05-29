@@ -1,3 +1,29 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İletişim | Öztürk Mekanik</title>
+    <link rel="stylesheet" href="css/style.css?v=2">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="top-bar">
+        <div class="top-bar-inner">
+            <span>📞 0532 123 45 67</span>
+            <span>✉️ info@ozturkmekanik.com</span>
+        </div>
+    </div>
+    <header>
+        <div class="header-inner">
+            <div class="logo">
+                <span class="logo-icon">⚙️</span>
+                <div class="logo-text">
+                    <span class="logo-title">ÖZTÜRK</span>
+                    <span class="logo-subtitle">MEKANİK</span>
+                </div>
+            </div>
+            <nav>
                 <a href="index.html">Ana Sayfa</a>
                 <a href="hakkimizda.html">Hakkımızda</a>
                 <a href="iletisim.html" class="active">İletişim</a>
@@ -74,12 +100,10 @@
     </footer>
 
     <script>
-        // Sayfa yüklenirken hemen bir varsayılan numara ile butonu aktif et
         var wpLink = document.getElementById('wpLink');
-        var defaultPhone = '905321234567'; // buraya kendi gerçek numaranı yaz (başında 90, boşluksuz)
+        var defaultPhone = '905321234567';
         wpLink.href = 'https://wa.me/' + defaultPhone + '?text=Merhaba%20bilgi%20almak%20istiyorum';
 
-        // CMS'den güncel veriyi al, varsa butonu güncelle
         fetch('/data/site.json')
           .then(res => res.json())
           .then(data => {
